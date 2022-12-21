@@ -7,10 +7,14 @@
 .NOTES 
     Written by dePyro, 2022.
  
-.Parameter SourcePath 
-    Path to source directory with the videos to be recombined.
-.Parameter DestinationPath
-    Optional: Path to the destination directory for the recombined videos. By default, this is a directory called "RecombinedFiles" in the directory above the source.
+.Parameter Destination 
+    Optional: Path to the destination CSV file.
+.Parameter Delimiter
+    Optional: Delimiter to be used in the CSV file.
+.Parameter Encoding
+    Optional: Encoding to be used in the CSV file. Choice from UTF8, UTF7, UTF32, ASCII, Unicode, BigEndianUnicode, OEM
+.Parameter CliOnly
+    Optional: Output results only to shell. Disables the other parameters.
 #>
 
 [CmdletBinding(DefaultParameterSetName='Export')]
